@@ -5,6 +5,7 @@ import importlib
 class XMLGetter(object):
     __login_url = 'http://webservices.ns.nl/ns-api-storingen?actual=true'
     __login_keys = importlib.import_module('login_token') 
+    # get your own api login key from ns
     __login_name = __login_keys.login_name
     __login_pass = __login_keys.login_pass
 

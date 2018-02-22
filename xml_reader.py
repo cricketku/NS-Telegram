@@ -1,8 +1,12 @@
 import xml.etree.ElementTree as ET
 import re
 
-class XMLReader(object):
-    def __init__(self,xml_string):
+import xml_getter
+
+class XMLReader(xml_getter.XMLGetter):
+    
+    def __init__(self):
+        xml_string = super().storingText()
         self.__root = ET.fromstring(xml_string)
         #self.__root = self.__tree.getroot()
 
@@ -15,7 +19,7 @@ class XMLReader(object):
         msg   = storing_list.find('Bericht').text
         msg = re.sub(r'<br/>','\n\n',msg)
         msg = (re.sub(r'<.+>','',msg)).strip()
-            
+        
         return [datu,traj,msg]
 
     def __conv_rule(self,storing_list):
@@ -36,4 +40,4 @@ class XMLReader(object):
         storing_list = list(map(self.__conv_rule,self.__storing_gepland))
         return storing_list
 
-
+    # return a list of a list containing [peri,traj,msg] for each disruption
