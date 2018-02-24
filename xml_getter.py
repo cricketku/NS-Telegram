@@ -1,3 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
+'''
+@Author: Xinshuo Gu 
+@Date: 2018-02-21 21:00:24  
+@Last Modified by: Xinshuo Gu 
+@Last Modified time: 2018-02-24 11:40:40 
+'''
+
+'''
+Here defines Class XMLGetter to get the xml data
+from NS API
+'''
+
 import requests
 import importlib
 

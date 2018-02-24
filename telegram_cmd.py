@@ -1,7 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
+'''
+@Author: Xinshuo Gu 
+@Date: 2018-02-22 18:00:24 
+@Last Modified by: Xinshuo Gu 
+@Last Modified time: 2018-02-24 11:41:43 
+'''
+
+'''
+Here defines all the function which will send to 
+dispachter of updater
+'''
+
 import xml_reader
 import str_combiner_func
 
-
+# the updater must receive object bot and update
 
 def start(bot,update):
     greeting = 'Welcome to the NS unoffical telegram bot!\n\n'

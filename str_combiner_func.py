@@ -1,3 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
+'''
+@Author: Xinshuo Gu 
+@Date: 2018-02-22 18:00:24  
+@Last Modified by: Xinshuo Gu 
+@Last Modified time: 2018-02-24 11:41:51 
+'''
+
+'''
+Here defines all the function to make and combine
+the string using map/reduce in order to send to telegram  
+'''
+
 from functools import reduce
 
 def singleCombine(element1,element2):
