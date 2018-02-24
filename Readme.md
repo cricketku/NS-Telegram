@@ -2,6 +2,8 @@
 
 This is an NS _unofficial_ Telegram Bot, which acquires the information from NS API beta.
 
+The entrance of the program is *telegram_main.py*
+
 The NS API can be requested 50000 times pro calender days.
 
 Now there are only two features: get the plan work and disruption on the traject.
